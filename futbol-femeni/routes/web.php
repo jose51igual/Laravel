@@ -12,4 +12,6 @@ Route::get('/equips', [EquipController::class, 'index']);
 
 Route::get('/estadis', [EstadiController::class, 'index']);
 
-Route::get('/estadis/create', [EstadiController::class, 'create']);
+Route::get('/estadis/create', [EstadiController::class, 'create'])->name('estadis.create');
+
+Route::get('/equips/{id}', [EquipController::class, 'show'])->name('equips.show');

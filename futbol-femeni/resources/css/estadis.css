@@ -59,3 +59,22 @@
 .form-estadi button:hover {
     background-color: #0056b3;
 }
+
+a{
+    border: solid 1px #007bff;
+    padding: 10px 20px;
+}
+
+footer{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}

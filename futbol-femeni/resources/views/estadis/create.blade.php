@@ -3,7 +3,7 @@
 
 @section('title', 'Crear Estadis')
 @section('content')
-<form action="" method="POST" class="form-estadi">
+<form action="" method="GET" class="form-estadi">
     @csrf
     <label for="nom">Nom:</label>
     <input type="text" name="nom" id="nom" required>

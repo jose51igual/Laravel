@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @vite( 'resources/css/estadis.css')
 
-@yield('title', 'Guia d\'Estadis')
 @section('content')
 <ul>
 @foreach($estadis as $estadi)
@@ -12,4 +11,5 @@
 />
 @endforeach
 </ul>
+<a href="{{ route('estadis.create') }}">Crear Estadi</a>
 @endsection
