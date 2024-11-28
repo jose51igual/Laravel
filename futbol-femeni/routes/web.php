@@ -1,17 +1,19 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EquipController;
 use App\Http\Controllers\EstadiController;
+use App\Http\Controllers\JugadoresController;
+use App\Http\Controllers\PartitsController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return "Benvingut a la Guia d'Equips de Futbol Femení!";
 });
 
-Route::get('/equips', [EquipController::class, 'index']);
+Route::resource('equips', EquipController::class);
 
-Route::get('/estadis', [EstadiController::class, 'index']);
+Route::resource('estadis', EstadiController::class);
 
-Route::get('/estadis/create', [EstadiController::class, 'create'])->name('estadis.create');
+Route::resource('jugadores', JugadoresController::class);
 
-Route::get('/equips/{id}', [EquipController::class, 'show'])->name('equips.show');
+Route::resource('partits', PartitsController::class);

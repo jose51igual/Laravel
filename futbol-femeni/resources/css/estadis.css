@@ -63,6 +63,7 @@
 a{
     border: solid 1px #007bff;
     padding: 10px 20px;
+    margin: 10px;
 }
 
 footer{
@@ -72,9 +73,4 @@ footer{
     background-color: #f9f9f9;
     border-radius: 5px;
     border: 1px solid #ccc;
-}
-
-h1{
-    text-align: center;
-    margin: 20px;
 }
